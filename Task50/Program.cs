@@ -52,7 +52,11 @@ PrintArray(ArrayNew);
 
 int poz1 = ReadInt("Введите номер строки в которой необходимо найти элемент:");
 int poz2 = ReadInt("Введите номер столбца в которой необходимо найти элемент:");
+FindElement(ArrayNew);
 
+
+void FindElement(int[,]ArrayNew)
+{
 if (poz1 <= m && poz2 <= n)
 {
     int c = poz1 -1;
@@ -64,7 +68,7 @@ else
 {
     System.Console.WriteLine("Такого элемента не существует:(");
 }
-
+}
 
 
 
